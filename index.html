@@ -4,9 +4,62 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <h1>This is my portfolio website</h1>
+  <div id="form">
+    <h1>Survey Form</h1>
+    <h2>Let us know how we can improve the course outline</h2>
+    <form action="/my-survey-form-page" method="post"></form>
+    <ul>
+      <li>
+        <label for="name">Name</label>
+        <input type="text" name="user-name" id="name" placeholder="Enter your name">
+      </li>
+      <li>
+        <label for="mail">E-mail</label>
+        <input type="text" name="email" placeholder="Enter your email " id="email">
+      </li>
+      <li>
+        <label for="age">Age</label>
+        <input type="text" name="age" placeholder="Age" id="age">
+      </li>
+    </ul>
+    <p>The option that best describes your current role?</p>
+    <label for="current role">Current Role</label>
+    <select name="role" id="role">
+      <option value="student">Student</option>
+      <option value="teacher">Teacher</option>
+      <option value="surveyer">Surveyer</option>
+      <option value="contractor">Contractor</option>
+    </select>
+    <p>How likely is that you will recommend the company to a friend</p>
+    <form action="/action-page" method="get">
+      <input type="checkbox" name="recommend1" id="recommend1">
+      <label for="definitely">Definitely</label>
+      <input type="checkbox" name="recommend" id="recommend">
+      <label for="maybe">Maybe</label>
+      <input type="checkbox" name="recommend" id="recommend">
+      <label for="not sure">Not sure</label>
+    </form>
+    <p>What do you like most about our company</p>
+    <label for="preferences">Preferences</label>
+    <select name="what likes" id="what likes">
+      <option value="services">Services</option>
+      <option value="products">Product</option>
+      <option value="contractors">Contractors</option>
+      <option value="customer services">Customer services</option>
+    </select>
+    <p>What should be enhanced in future (Check all that applies</p>
+    <form action="/action-page" method="get">
+      <input type="checkbox" name="improvements" id="improvements">
+      <label for="fron-end projects">Front-end Projects</label>
+      <input type="checkbox" name="improvements1" id="improvements1">
+      <label for="Back-end Projects">Back-end Projects</label>
+      <input type="checkbox" name="improvements2" id="improvements2">
+      <label for="Data visualization">Data Visualization</label>
+    </form>
+  </div>
 </body>
 </html>
